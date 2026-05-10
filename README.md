@@ -1,6 +1,6 @@
-## 📌 Theoretical Background
 
-### 🔹 FPGA-Based Image Processing
+
+### 🔹 FPGA--Modern Image Processing Filters
 
 Digital image processing on FPGA enables **real-time performance** by exploiting **parallelism and pipelining**.
 Unlike CPU-based systems, FPGA processes pixel data in a **streaming manner**, reducing latency and improving throughput.
