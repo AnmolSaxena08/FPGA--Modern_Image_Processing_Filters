@@ -1,6 +1,6 @@
 # ▶️ RUN.md — How to Execute the Project
 
-This guide explains how to run the **FPGA-based Image Processing Pipeline** from input image to final output.
+This guide explains how to run the FPGA-based Image Processing Pipeline from input image to final output.
 
 ---
 
@@ -28,20 +28,20 @@ Ensure your folders are organized as follows:
 
 ```text
 FPGA-Image-Processing/
-├── python/
+├── Python/
 │   ├── rgb_input.py
 │   └── jpg_output.py
 │
-├── verilog/
+├── Verilog/
 │   ├── imageProcessTop.v
 │   ├── imageControl.v
 │   ├── lineBuffer.v
 │   └── conv.v
 │
-├── testbench/
+├── Testbench/
 │   └── tb.v
 │
-├── data/
+├── Data/
 │   ├── input/
 │   │   └── input.jpg
 │   │
@@ -51,7 +51,7 @@ FPGA-Image-Processing/
 │   └── output_txt/
 │       └── image_rgb_out.txt
 │
-├── results/
+├── Results/
 │   ├── demo.gif
 │   ├── input/
 │   │   └── input.jpg
@@ -67,13 +67,13 @@ FPGA-Image-Processing/
 Run Python script to convert input image into pixel data:
 
 ```bash
-python python/rgb_input.py
+Python Python/rgb_input.py
 ```
 
 ### 🔹 Output:
 
 ```text
-data/intermediate/image_rgb.txt
+Data/intermediate/image_rgb.txt
 ```
 
 👉 This file contains RGB pixel values used as input for Verilog simulation.
@@ -84,13 +84,13 @@ data/intermediate/image_rgb.txt
 
 ### Steps:
 
-1. Open **Vivado**
+1. Open Vivado
 2. Create a new project
 3. Add files:
 
-   * All `.v` files from `verilog/`
-   * Testbench file `testbench/tb.v`
-4. Set **tb.v as Top Module**
+   * All `.v` files from `Verilog/`
+   * Testbench file `Testbench/tb.v`
+4. Set tb.v as Top Module
 5. Run:
 
    ```text
@@ -102,7 +102,7 @@ data/intermediate/image_rgb.txt
 ### 🔹 Output Generated:
 
 ```text
-data/output_txt/image_rgb_out.txt
+Data/output_txt/image_rgb_out.txt
 ```
 
 👉 This file contains processed pixel data from hardware pipeline.
@@ -114,38 +114,22 @@ data/output_txt/image_rgb_out.txt
 Run:
 
 ```bash
-python python/jpg_output.py
+Python Python/jpg_output.py
 ```
 
 ### 🔹 Output:
 
 ```text
-results/images/
+Results/images/
 ```
 
 👉 Final processed images will be generated here.
 
 ---
 
-## 🎥 Step 4 (Optional): Generate Demo GIF
-
-To visualize results:
-
-```bash
-python python/generate_gif.py
-```
-
-### 🔹 Output:
-
-```text
-results/demo.gif
-```
-
----
-
 ## 🔍 Verification
 
-* Check waveform in Vivado (`docs/waveform.png`)
+* Check waveform in Vivado (`Docs/waveform.png`)
 * Compare input vs output images
 * Validate filter correctness visually
 
@@ -201,9 +185,8 @@ Final Output Image
 
 ## ✅ Final Output
 
-* Processed images → `results/images/`
-* Demo GIF → `results/demo.gif`
-* Waveform → `docs/waveform.png`
+* Processed images → `Results/images/`
+* Waveform → `Docs/waveform.jpg`
 
 ---
 
