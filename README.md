@@ -23,15 +23,6 @@ Unlike CPU-based systems, FPGA processes pixel data in a **streaming manner**, r
 
 ---
 
-### 🔹 Convolution Operation
-
-G(x,y) = \sum_{i=-1}^{1} \sum_{j=-1}^{1} K(i,j) \cdot I(x+i, y+j)
-
-* Core operation for filters (edge, blur, sharpening)
-* Implemented using **parallel multipliers and adders**
-
----
-
 ### 🔹 Fixed-Point Computation
 
 * Avoids floating-point complexity
