@@ -27,7 +27,7 @@ Input Image
 ## 📊 Results & Waveform Analysis
 
 <p align="center">
-  <img src="Docs/waveform_01.png" width="80%">
+  <img src="Docs/Waveform_01.jpg" width="80%">
 </p>
 
 **Figure:** Simulation waveform demonstrating:
@@ -83,10 +83,9 @@ Input Image
 
 ## 🔗 Direct Links (Quick Access)
 
-* 📐 Architecture Diagram → `docs/architecture.png`
-* 📊 Waveform → `docs/waveform.png`
-* 🎥 Demo GIF → `results/demo.gif`
-* 🖼️ Input Image → `results/input/input.jpg`
-* 🎨 Output Images → `results/images/`
+* 📐 Architecture Diagram → `Docs/architecture.png`
+* 📊 Waveform → `Docs/Waveform_02.jpg`
+* 🖼️ Input Image → `Results/Filters/input.jpg`
+* 🎨 Output Images → `Results/Filters`
 
 ---
