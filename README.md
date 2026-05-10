@@ -94,7 +94,7 @@ To apply filters, neighboring pixels are required. Instead of storing the full i
 ## 📊 Results & Waveform Analysis
 
 <p align="center">
-  <img src="Docs/Waveform_01.jpg" width="80%">
+  <img src="Docs/Waveform_01.jpg" width="60%">
 </p>
 <p align="center">
 Figure: Simulation waveform of pixel processing.
@@ -121,8 +121,8 @@ The waveform verifies hardware behavior:
       <td align="center"><b>Output Image</b></td>
     </tr>
     <tr>
-      <td><img src="Results/Filters/input.jpg" width="100%"></td>
-      <td><img src="Results/Filters/Color_boost.jpg" width="100%"></td>
+      <td><img src="Results/Filters/input.jpg" width="60%"></td>
+      <td><img src="Results/Filters/Color_boost.jpg" width="60%"></td>
     </tr>
   </table>
 </p>
