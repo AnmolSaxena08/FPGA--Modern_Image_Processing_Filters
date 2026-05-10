@@ -46,13 +46,25 @@ G(x,y) = \sum_{i=-1}^{1} \sum_{j=-1}^{1} K(i,j) \cdot I(x+i, y+j)
   <img src="Docs/architecture.png" width="80%">
 </p>
 
-**Figure:** Block diagram of the FPGA-based image processing pipeline showing streaming data flow, line buffers, and filter module.
+**Figure:** FPGA-based streaming image processing architecture.
+
+### 🔍 Understanding
+
+The system follows a **streaming dataflow architecture**, where pixel data is processed continuously without storing the full image.
+
+* Input pixels are fed sequentially from memory
+* Control logic manages synchronization and data validity
+* Line buffers store previous rows to generate neighborhood pixels
+* Filter module performs real-time computation
+* Output buffer streams processed pixels
+
+👉 This design ensures **low latency and high throughput**, ideal for real-time applications.
 
 ---
 
 ## ⚙️ Processing Pipeline Flow
 
-```text
+```text id="m9x3p6"
 Input Image 
    → Python (RGB Conversion) 
    → Input Buffer 
@@ -62,7 +74,29 @@ Input Image
    → Output Image
 ```
 
-👉 This pipeline enables **continuous streaming and parallel processing**, achieving near real-time performance.
+### 🔍 Understanding
+
+This pipeline divides processing into stages:
+
+* Each stage performs a specific operation
+* Multiple stages run **simultaneously (pipelining)**
+* After initial delay, output is produced every clock cycle
+
+👉 Achieves **~1 pixel per clock throughput**
+
+---
+
+## 🧠 Line Buffer & Sliding Window
+
+### 🔍 Concept
+
+To apply filters, neighboring pixels are required. Instead of storing the full image:
+
+* Line buffers store **previous rows**
+* A **3×3 window** is generated dynamically
+* Data shifts with each new pixel
+
+👉 This reduces memory usage and enables **continuous processing**
 
 ---
 
@@ -72,11 +106,17 @@ Input Image
   <img src="Docs/Waveform_01.jpg" width="80%">
 </p>
 
-**Figure:** Simulation waveform demonstrating:
+**Figure:** Simulation waveform of pixel processing.
 
-* Pipeline latency
-* Valid pixel streaming
-* Input-output synchronization
+### 🔍 Understanding
+
+The waveform verifies hardware behavior:
+
+* **Input valid signal** shows incoming pixel stream
+* **Output valid signal** appears after pipeline delay
+* Continuous output confirms correct streaming
+
+👉 Demonstrates **pipeline latency and synchronization**
 
 ---
 
@@ -85,6 +125,16 @@ Input Image
 <p align="center">
   <img src="Results/demo.gif" width="70%">
 </p>
+
+**Figure:** Real-time visual representation of different filters.
+
+### 🔍 Understanding
+
+* Shows multiple filters applied on same input
+* Confirms correctness of processing pipeline
+* Demonstrates hardware-level transformations
+
+👉 Provides **visual validation of design**
 
 ---
 
@@ -104,20 +154,27 @@ Input Image
 </p>
 
 <p align="center">
-<b>Figure:</b> Comparative visual analysis of the input image (left) vs hardware-processed output (right).
+<b>Figure:</b> Comparison between original and processed image.
 </p>
+
+### 🔍 Understanding
+
+* Input image is converted into pixel stream
+* Filter modifies pixel intensity or features
+* Output image reflects hardware processing
+
+👉 Confirms **functional correctness of filters**
 
 ---
 
 ## 💡 Skills Demonstrated
 
 * **FPGA Design (Verilog HDL)** – RTL design, modular architecture
-* **Digital Image Processing** – Filtering, pixel-level transformations
-* **Streaming Architecture** – AXI-style valid/ready pipeline
-* **Hardware Optimization** – Line buffers, fixed-point computation
-* **Verification** – Testbench design, waveform analysis in Vivado
-* **Hardware-Software Integration** – Python + Verilog workflow
-* **Debugging & Simulation** – Functional validation using testbench
+* **Digital Image Processing** – Filtering, pixel-level operations
+* **Streaming Architecture** – AXI-style pipeline
+* **Hardware Optimization** – Line buffers, fixed-point arithmetic
+* **Verification** – Waveform analysis and debugging
+* **HW-SW Integration** – Python + Verilog workflow
 
 ---
 
@@ -130,3 +187,4 @@ Input Image
 * 🎨 Output Images → [Results/Filters](./Results/Filters/)
 
 ---
+
