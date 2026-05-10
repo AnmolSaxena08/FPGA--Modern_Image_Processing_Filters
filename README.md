@@ -121,8 +121,8 @@ The waveform verifies hardware behavior:
       <td align="center"><b>Output Image</b></td>
     </tr>
     <tr>
-      <td><img src="Results/Filters/input.jpg" width="60%"></td>
-      <td><img src="Results/Filters/Color_boost.jpg" width="60%"></td>
+      <td><img src="Results/Filters/input.jpg" width="100%"></td>
+      <td><img src="Results/Filters/Color_boost.jpg" width="100%"></td>
     </tr>
   </table>
 </p>
