@@ -27,7 +27,7 @@ Input Image
 ## 📊 Results & Waveform Analysis
 
 <p align="center">
-  <img src="docs/waveform.png" width="80%">
+  <img src="Docs/waveform_01.png" width="80%">
 </p>
 
 **Figure:** Simulation waveform demonstrating:
@@ -41,10 +41,20 @@ Input Image
 ## 🎥 Output Visualization (Demo)
 
 <p align="center">
-  <img src="results/demo.gif" width="70%">
+  <table>
+    <tr>
+      <td align="center"><b>Input Image</b></td>
+      <td align="center"><b>Output Image</b></td>
+    </tr>
+    <tr>
+      <td><img src="Results/input/input.jpg" width="100%"></td>
+      <td><img src="Results/Filters/Color_boost.jpg" width="100%"></td>
+    </tr>
+  </table>
 </p>
-
-**Figure:** Comparative visual analysis of input vs hardware-processed output using multiple filters.
+<p align="center">
+  <b>Figure:</b> Comparative visual analysis of the input image (left) vs hardware-processed output (right).
+</p>
 
 ---
 
