@@ -37,7 +37,7 @@ Unlike CPU-based systems, FPGA processes pixel data in a **streaming manner**, r
   <img src="Docs/architecture.png" width="50%">
 </p>
 <p align="center">
-**Figure:** FPGA-based streaming image processing architecture.
+Figure: FPGA-based streaming image processing architecture.
 </p>
 ### 🔍 Understanding
 
@@ -84,7 +84,7 @@ This pipeline divides processing into stages:
 To apply filters, neighboring pixels are required. Instead of storing the full image:
 
 * Line buffers store **previous rows**
-* A **3×3 window** is generated dynamically
+* A 3×3 window is generated dynamically
 * Data shifts with each new pixel
 
 👉 This reduces memory usage and enables **continuous processing**
@@ -97,17 +97,17 @@ To apply filters, neighboring pixels are required. Instead of storing the full i
   <img src="Docs/Waveform_01.jpg" width="80%">
 </p>
 <p align="center">
-**Figure:** Simulation waveform of pixel processing.
+Figure: Simulation waveform of pixel processing.
 </p>
 ### 🔍 Understanding
 
 The waveform verifies hardware behavior:
 
-* **Input valid signal** shows incoming pixel stream
-* **Output valid signal** appears after pipeline delay
+* Input valid signal: shows incoming pixel stream
+* Output valid signal: appears after pipeline delay
 * Continuous output confirms correct streaming
 
-👉 Demonstrates **pipeline latency and synchronization**
+👉 Demonstrates : pipeline latency and synchronization
 
 ---
 
@@ -155,7 +155,7 @@ The waveform verifies hardware behavior:
 ## 🔗 Direct Links (Quick Access)
 
 * 📐 Architecture Diagram → [Docs/architecture.png](./Docs/architecture.png)
-* 📊 Waveform → [Docs/Waveform_02.jpg](./Docs/Waveform_02.jpg)
+* 📊 Waveform → [Docs/Waveform_02.jpg](./Docs)
 * 🎥 Demo → [Results/demo.gif](./Results/demo.gif)
 * 🖼️ Input Image → [Results/Filters/input.jpg](./Results/Filters/input.jpg)
 * 🎨 Output Images → [Results/Filters](./Results/Filters/)
