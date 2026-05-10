@@ -1,6 +1,6 @@
 
 
-### 🔹 FPGA--Modern Image Processing Filters
+<h1 align="center"><b>🔹 FPGA--Modern Image Processing Filters</b></h1>
 
 Digital image processing on FPGA enables **real-time performance** by exploiting **parallelism and pipelining**.
 Unlike CPU-based systems, FPGA processes pixel data in a **streaming manner**, reducing latency and improving throughput.
