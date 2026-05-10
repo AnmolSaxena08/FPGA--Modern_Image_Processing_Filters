@@ -34,7 +34,7 @@ Unlike CPU-based systems, FPGA processes pixel data in a **streaming manner**, r
 ## 🏗️ System Architecture
 
 <p align="center">
-  <img src="Docs/architecture.png" width="80%">
+  <img src="Docs/architecture.png" width="50%">
 </p>
 
 **Figure:** FPGA-based streaming image processing architecture.
