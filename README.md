@@ -36,9 +36,9 @@ Unlike CPU-based systems, FPGA processes pixel data in a **streaming manner**, r
 <p align="center">
   <img src="Docs/architecture.png" width="50%">
 </p>
-
+<p align="center">
 **Figure:** FPGA-based streaming image processing architecture.
-
+</p>
 ### 🔍 Understanding
 
 The system follows a **streaming dataflow architecture**, where pixel data is processed continuously without storing the full image.
@@ -96,9 +96,9 @@ To apply filters, neighboring pixels are required. Instead of storing the full i
 <p align="center">
   <img src="Docs/Waveform_01.jpg" width="80%">
 </p>
-
+<p align="center">
 **Figure:** Simulation waveform of pixel processing.
-
+</p>
 ### 🔍 Understanding
 
 The waveform verifies hardware behavior:
@@ -111,23 +111,6 @@ The waveform verifies hardware behavior:
 
 ---
 
-## 🎥 Output Visualization (Demo)
-
-<p align="center">
-  <img src="Results/demo.gif" width="70%">
-</p>
-
-**Figure:** Real-time visual representation of different filters.
-
-### 🔍 Understanding
-
-* Shows multiple filters applied on same input
-* Confirms correctness of processing pipeline
-* Demonstrates hardware-level transformations
-
-👉 Provides **visual validation of design**
-
----
 
 ## 🖼️ Input vs Output Comparison
 
