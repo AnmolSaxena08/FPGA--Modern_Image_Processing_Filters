@@ -1,7 +1,7 @@
 ## 🏗️ System Architecture
 
 <p align="center">
-  <img src="docs/architecture.png" width="80%">
+  <img src="Docs/architecture.png" width="80%">
 </p>
 
 **Figure:** Block diagram of the FPGA-based image processing pipeline showing streaming data flow, line buffers, and filter module.
