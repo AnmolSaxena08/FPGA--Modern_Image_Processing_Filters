@@ -1,0 +1,41 @@
+# ==========================================
+# Xilinx Vivado Ignored Files
+# ==========================================
+# Ignore Vivado build directories and caches
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# Ignore Vivado log and journal files
+*.log
+*.jou
+*.str
+*.pb
+
+# Ignore simulation waveform databases (can be huge)
+*.wdb
+
+# ==========================================
+# Python Ignored Files
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# ==========================================
+# General OS Ignored Files
+# ==========================================
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
