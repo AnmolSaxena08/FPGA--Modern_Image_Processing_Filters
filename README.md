@@ -40,6 +40,8 @@ Input Image
 
 ## 🎥 Output Visualization (Demo)
 
+## 🖼️ Input vs Output Comparison
+
 <p align="center">
   <table>
     <tr>
@@ -58,17 +60,6 @@ Input Image
 
 ---
 
-## 🖼️ Input vs Output Comparison
-
-<p align="center">
-  <img src="results/input/input.jpg" width="35%">
-  <img src="results/images/edge_detection.bmp" width="35%">
-</p>
-
-**Figure:** Example showing original input image (left) and processed output (right).
-
----
-
 ## 💡 Skills Demonstrated
 
 * **FPGA Design (Verilog HDL)** – RTL design, modular architecture
@@ -83,9 +74,9 @@ Input Image
 
 ## 🔗 Direct Links (Quick Access)
 
-* 📐 Architecture Diagram → `Docs/architecture.png`
-* 📊 Waveform → `Docs/Waveform_02.jpg`
-* 🖼️ Input Image → `Results/Filters/input.jpg`
-* 🎨 Output Images → `Results/Filters`
+* 📐 Architecture Diagram → Docs/architecture.png
+* 📊 Waveform → Docs/Waveform_02.jpg
+* 🖼️ Input Image → Results/Filters/input.jpg
+* 🎨 Output Images → Results/Filters
 
 ---
