@@ -74,9 +74,9 @@ Input Image
 
 ## 🔗 Direct Links (Quick Access)
 
-* 📐 Architecture Diagram → Docs/architecture.png
-* 📊 Waveform → Docs/Waveform_02.jpg
-* 🖼️ Input Image → Results/Filters/input.jpg
-* 🎨 Output Images → Results/Filters
+* 📐 Architecture Diagram → [Docs/architecture.png](./Docs/architecture.png)  
+* 📊 Waveform → [Docs/Waveform_02.jpg](./Docs/Waveform_02.jpg)  
+* 🖼️ Input Image → [Results/Filters/input.jpg](./Results/Filters/input.jpg)  
+* 🎨 Output Images → [Results/Filters](./Results/Filters/)  
 
 ---
